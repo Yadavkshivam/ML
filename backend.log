@@ -1,0 +1,32 @@
+INFO:__main__:============================================================
+INFO:__main__:Starting Blood Group Detection Server
+INFO:__main__:============================================================
+INFO:__main__:API available at http://localhost:8000
+INFO:__main__:Endpoints:
+INFO:__main__:  POST /predict - Predict blood group from image
+INFO:__main__:  GET /health - Check model availability
+INFO:__main__:============================================================
+ * Serving Flask app 'app'
+ * Debug mode: off
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.45.68.58:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [02/May/2026 11:15:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2026 11:16:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2026 11:16:45] "GET / HTTP/1.1" 200 -
+INFO:__main__:Health check requested
+INFO:__main__:Loading model: resnet from /Users/shivamyadav/ml project/Major_project/code/Resnet34/model_blood_group_detection_resnet.h5
+/Users/shivamyadav/ml project/Major_project/venv/lib/python3.13/site-packages/keras/src/optimizers/base_optimizer.py:86: UserWarning: Argument `decay` is no longer supported and will be ignored.
+  warnings.warn(
+WARNING:absl:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+WARNING:absl:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+INFO:__main__:Successfully loaded resnet
+INFO:__main__:Loading model: vgg16 from /Users/shivamyadav/ml project/Major_project/code/Vgg16/blood_group_detection.h5
+WARNING:absl:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+WARNING:absl:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+INFO:__main__:Successfully loaded vgg16
+INFO:werkzeug:127.0.0.1 - - [02/May/2026 11:16:46] "GET /health HTTP/1.1" 200 -
+INFO:__main__:Health check requested
+INFO:werkzeug:10.45.68.58 - - [02/May/2026 11:18:28] "GET /health HTTP/1.1" 200 -
