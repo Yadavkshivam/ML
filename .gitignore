@@ -1,3 +1,62 @@
+# Python
 .venv
-.qodo
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Node/Mobile
+node_modules/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.expo/
+.expo-shared/
+
+# IDE
 .vscode
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Large dataset (keep models for distribution)
+dataset_blood_group/
+
+# Logs
+backend.log
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+.qodo
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+test/model_blood_group_detection_resnet.h5
